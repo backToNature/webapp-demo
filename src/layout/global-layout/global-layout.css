@@ -1,7 +1,7 @@
 body{
     text-align: center;
     background: #eee;
-    width: 320px;
+    /*width: 320px;*/
     overflow: hidden;
     font-family: "黑体-简", "Helvetica";
 }
@@ -19,12 +19,6 @@ header {
     height: 518px;
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    opacity: 0.6;
 }
 
 .flex {

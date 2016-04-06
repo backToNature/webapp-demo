@@ -1,0 +1,17 @@
+.module-footer-tabs {
+    height: 49px;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.8;
+}
+
+.module-footer-tabs .footer-tabs a{
+    display: block;
+    width: 64px;
+    height: 49px;
+    text-align: center;
+    line-height: 49px;
+    color: #777;
+}
