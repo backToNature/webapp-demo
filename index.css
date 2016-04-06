@@ -2,8 +2,14 @@ body{
     text-align: center;
     width: 320px;
     margin: 0 auto;
-    
+    background: #f5f5f5;
+    color: #333;
 }
+
+.header {
+    background: #fff;
+}
+
 .header .header-title {
     background: #529ff2;
     text-align: center;
@@ -27,4 +33,111 @@ body{
     font-size: 24px;
     font-weight: 100;
     margin-left: 50.5px;
+}
+
+.header .header-tabs {
+    overflow: hidden;
+}
+
+.header .header-tabs .header-tabs-ul li {
+    padding: 14px 14px 11px;
+    font-size: 16px;
+}
+
+.header .header-tabs .header-tabs-ul li.active {
+    color: #529ff2;
+    border-bottom: 2px solid #529ff2;
+}
+
+.content .panel-index {
+
+}
+
+.content .panel-index .select-tab {
+    padding: 10px;
+    background: #fff;
+}
+
+.content .panel-index .select-tab>.flex {
+
+}
+
+.content .panel-index .select-tab>.flex>.cell img {
+    width: 50px;
+    height: 50px;
+}
+
+.content .panel-index .select-tab>.flex>.cell p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.content .panel-index .panel-index-list {
+    text-align: left;
+    background: #fff;
+    margin-top: 10px;
+}
+.content .panel-index .panel-index-list .list-item {
+    position: relative;
+    padding: 10px 10px 9px;
+    border-bottom: 1px solid #ebebeb;
+}
+.content .panel-index .panel-index-list .list-item:first-child {
+    padding-top: 9px;
+}
+.content .panel-index .panel-index-list .list-item img {
+    float: left;
+    display: inline-block;
+    width: 105px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.content .panel-index .panel-index-list .list-item .list-item-title {
+    font-size: 15px;
+}
+
+.content .panel-index .panel-index-list .list-item .list-item-bottom {
+    display: inline;
+    position: absolute;
+    bottom: 10px;
+    left: 125px;
+}
+
+.content .panel-index .panel-index-list .list-item .list-item-bottom .red-tag{
+    border: 1px solid #fd745d;
+    padding: 0 2px;
+    color: #fd745d;
+    margin-right: 5px;
+}
+
+.content .panel-index .panel-index-list .list-item .list-item-bottom .icon-person {
+    background: url("./imgs/person.png") no-repeat;
+    width: 13.5px;
+    height: 14px;
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: bottom;
+    margin-left: 1px;
+}
+
+.content .panel-index .panel-index-list .list-item .icon-msg {
+    height: 14px;
+    width: 14px;
+    background: url("./imgs/msg.png") no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.content .panel-index .panel-index-list .list-item .item-bottom-text {
+    font-size: 13px;
+    margin-left: 2px;
+    color: #bcbcbc;
+}
+
+.content .panel-index .panel-index-list .list-item .right-comment {
+    position: absolute;
+    bottom: 9px;
+    right: 9px;
 }
