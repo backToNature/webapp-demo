@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    width: 320px;
+    margin: 0 auto;
+    
+}
+.header .header-title {
+    background: #529ff2;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+}
+
+.header .header-title .title-logo {
+    display: inline-block;
+    background: url("./imgs/title.png") no-repeat;
+    width: 49.5px;
+    height: 22.5px;
+    background-size: 100%;
+    position: absolute;
+    top: 10px;
+}
+
+.header .header-title h1 {
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 100;
+    margin-left: 50.5px;
+}
