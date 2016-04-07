@@ -22,7 +22,7 @@ input,img {
     vertical-align:middle
 }
 body {
-    font-family:arial
+    line-height: 1;
 }
 a {
     color:#000;
