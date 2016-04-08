@@ -4,6 +4,8 @@ body{
     margin: 0 auto;
     background: #f5f5f5;
     color: #333;
+    position: relative;
+    overflow: hidden;
 }
 
 .header {
@@ -47,6 +49,12 @@ body{
 .header .header-tabs .header-tabs-ul li.active {
     color: #529ff2;
     border-bottom: 2px solid #529ff2;
+}
+
+.content {
+    height: 480px;
+    overflow-x: hidden;
+    overflow-y: scroll; 
 }
 
 .content .panel-index {
@@ -144,5 +152,36 @@ body{
 }
 
 .footer {
+    height: 24px;
     position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer li {
+    display: block;
+    width: 64px;
+    height: 49px;
+    text-align: center;
+    line-height: 49px;
+    color: #777;
+}
+
+.footer>.flex {
+
+}
+
+.footer>.flex>.cell {
+
+}
+
+.footer .footer-icon {
+    margin: 0 auto;
+    width: 20px;
+    height: 20px;
+    background: #000;
+}
+
+.footer .footer-icon.footer-icon-msg {
+
 }
