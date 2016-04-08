@@ -142,3 +142,7 @@ body{
     bottom: 9px;
     right: 9px;
 }
+
+.footer {
+    position: absolute;
+}
