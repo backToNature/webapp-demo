@@ -35,7 +35,7 @@ html,body {
     -webkit-text-size-adjust:none
 }
 html,a {
-    -webkit-tap-highlight-color:transparent
+    -webkit-tap-highlight-color:rgba(0,0,0,.1);
 }
 textarea.fixAndroidKeyboard:focus,input.fixKeyboard:focus {
     -webkit-tap-highlight-color:rgba(255,255,255,0);
