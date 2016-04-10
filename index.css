@@ -50,6 +50,8 @@ body, html {
 
 .header .header-tabs {
     overflow: hidden;
+    border-bottom:1px solid #f5f5f5;
+    position: relative;
 }
 
 .header .header-tabs .header-tabs-ul li {
@@ -57,9 +59,27 @@ body, html {
     font-size: 16px;
 }
 
+.noborder {
+    border: none!important;
+}
+
+#tab1:target {
+    transform: translate3d(58px,0px,0px); 
+}
+
 .header .header-tabs .header-tabs-ul li.active {
     color: #529ff2;
     border-bottom: 2px solid #529ff2;
+}
+
+.header .header-tabs .bottom-select {
+    display: none;
+    position: absolute;
+    height: 2px;
+    background: #529ff2;
+    width: 60px;
+    transition-duration: 0.3s;
+    bottom: 0;
 }
 
 .content {
@@ -76,6 +96,7 @@ body, html {
 .content .panel-index .select-tab {
     padding: 13px 8px 9px;
     background: #fff;
+    margin-bottom: 11px;
 }
 
 .content .panel-index .select-tab>.flex {
@@ -95,7 +116,6 @@ body, html {
 .content .panel-index .panel-index-list {
     text-align: left;
     background: #fff;
-    margin-top: 11px;
 }
 .content .panel-index .panel-index-list .list-item {
     position: relative;
