@@ -47,6 +47,18 @@ textarea.fixAndroidKeyboard:focus,input.fixKeyboard:focus {
     height:100%;
     overflow:hidden
 }
+.scroll {
+    -webkit-overflow-scrolling: touch;
+}
+.scroll::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+.scroll:-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
 .clearfix:after {
     display:block;
     content:'';
