@@ -6,14 +6,13 @@ body{
     color: #333;
     position: relative;
 }
-
 body, html {
     overflow: hidden;
     height: 100%;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
 }
-
+img {
+    pointer-events: none
+}
 .touchHighLight {
     background: #f7f7f7!important;
     border-color: #f7f7f7!important;

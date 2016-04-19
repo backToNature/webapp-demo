@@ -17,6 +17,8 @@ $(function () {
         e.stopPropagation();
     });
 
+
+
     $('.list-item').on('touchstart', function () {
         $(this).addClass('touchHighLight');
         $(this).prev().css('border-color', '#f7f7f7');
@@ -24,10 +26,14 @@ $(function () {
             $(this).removeClass('touchHighLight');
             $(this).off('touchend.highLight');
         });
-        $(this).one('touchend.highLight', function () {
+        $(this).one('touchend.highLight', function (e) {
             $(this).removeClass('touchHighLight');
             $(this).off('touchmove.highLight');
+            console.log(e);
         });
+    });
+    $(document).on('MSGestureEnd', function (e) {
+        console.log(e);
     });
 
     // $('.header-tabs-ul li').on('touchend', function () {
