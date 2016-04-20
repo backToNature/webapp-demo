@@ -52,7 +52,7 @@ img {
     -webkit-user-select: none;
 }
 html,a {
-    -webkit-tap-highlight-color:rgba(0,0,0,.1);
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 textarea.fixAndroidKeyboard:focus,input.fixKeyboard:focus {
     -webkit-tap-highlight-color:rgba(255,255,255,0);
