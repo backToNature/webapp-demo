@@ -26,6 +26,7 @@ img {
     text-align: center;
     height: 44px;
     line-height: 44px;
+    padding-top: 20px;
 }
 
 .header .header-title .title-logo {
@@ -35,7 +36,7 @@ img {
     height: 22.5px;
     background-size: 100%;
     position: absolute;
-    top: 10px;
+    top: 30px;
 }
 
 .header .header-title h1 {
@@ -73,10 +74,6 @@ img {
     border: none!important;
 }
 
-#tab1:target {
-    transform: translate3d(58px,0px,0px); 
-}
-
 .header .header-tabs .header-tabs-ul li.active {
     color: #529ff2;
     border-bottom: 2px solid #529ff2;
@@ -93,7 +90,7 @@ img {
 }
 
 .content {
-    height: 480px;
+    height: 460px;
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch; 
@@ -193,85 +190,3 @@ img {
     right: 9px;
 }
 
-.footer {
-    height: 49px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    border-top: 1px solid #f6f6f6;
-}
-
-.footer .footer-tabs {
-    padding: 5px 0;
-    background: rgba(255,255,255,.8);
-}
-
-.footer li {
-    text-align: center;
-    line-height: 49px;
-    color: #777;
-}
-.footer li.active {
-    color: #529ff2;
-}
-
-.footer .footer-icon {
-    margin: 0 auto;
-    height: 23px;
-    width: 23px;
-}
-
-.footer .footer-icon.footer-icon-info {
-    background: url('./imgs/icon-info.png') no-repeat;
-    background-size: 100%;
-}
-
-.footer .active .footer-icon.footer-icon-info {
-    background: url('./imgs/icon-info-blue.png') no-repeat;
-    background-size: 100%;
-}
-
-.footer .footer-icon.footer-icon-car {
-    background: url('./imgs/icon-car.png') no-repeat;
-    background-size: 100%;
-}
-
-.footer .active .footer-icon.footer-icon-car {
-    background: url('./imgs/icon-car-blue.png') no-repeat;
-    background-size: 100%;
-}
-
-.footer .footer-icon.footer-icon-money {
-    background: url('./imgs/icon-money.png') no-repeat;
-    background-size: 100%;
-}
-
-.footer .active .footer-icon.footer-icon-money {
-    background: url('./imgs/icon-money-blue.png') no-repeat;
-    background-size: 100%;
-}
-
-.footer .footer-icon.footer-icon-msg {
-    background: url('./imgs/icon-msg.png') no-repeat;
-    background-size: 100%;
-}
-
-.footer .active .footer-icon.footer-icon-msg {
-    background: url('./imgs/icon-msg-blue.png') no-repeat;
-    background-size: 100%;
-}
-
-.footer .footer-icon.footer-icon-person {
-    background: url('./imgs/icon-person.png') no-repeat;
-    background-size: 100%;
-}
-
-.footer .active .footer-icon.footer-icon-person {
-    background: url('./imgs/icon-person-blue.png') no-repeat;
-    background-size: 100%;
-}
-
-.footer .footer-text {
-    line-height: 20px;
-    font-size: 10px;
-}
