@@ -1,4 +1,9 @@
 
+/*初始样式*/
+body {
+    width: 320px;
+    margin: 0 auto
+}
 /*页脚样式*/
 .footer {
     height: 49px;
@@ -86,11 +91,11 @@
 /*pannel样式*/
 .pannel-block {
     background: #fff;
-    margin: 10px 0;
+    margin-top: 10px;
 }
 
 .pannel-block .pannel-item {
-    padding: 18px 10px;
+    padding-left: 10px;
     position: relative;
 }
 
@@ -99,12 +104,20 @@
     height: 19px;
     display: block;
     float: left;
+    margin-top: 15px;
     margin-right: 11px;
+}
+.pannel-block .pannel-item .pannel-item-left+.pannel-content {
+    margin-left: 30px;
 }
 
 .pannel-block .pannel-item .pannel-content {
-    padding: 1.5px 0;
-    border-bottom: 1px solid #ebebeb;
+    padding: 16.5px 0;
+    border-top: 1px solid #ebebeb;
+}
+
+.pannel-block .pannel-item:first-child .pannel-content {
+    border: none;
 }
 
 .pannel-block .pannel-item .pannel-content .pannel-item-text {
@@ -120,12 +133,30 @@
     background: url('./imgs/icon-right.png') no-repeat;
     background-size: 100%;
     float: right;
-    /*position: absolute;
-    right: 16px;
-    top: 22px;*/
+    margin-right: 17px;
 }
 
 .pannel-block .pannel-item .pannel-item-left.icon-location {
     background: url('./imgs/icon-location.png') no-repeat;
+    background-size: 100%;
+}
+
+.pannel-block .pannel-item .pannel-item-left.icon-star {
+    background: url('./imgs/icon-star.png') no-repeat;
+    background-size: 100%;
+}
+
+.pannel-block .pannel-item .pannel-item-left.icon-rules {
+    background: url('./imgs/icon-rules.png') no-repeat;
+    background-size: 100%;
+}
+
+.pannel-block .pannel-item .pannel-item-left.icon-calculator {
+    background: url('./imgs/icon-calculator.png') no-repeat;
+    background-size: 100%;
+}
+
+.pannel-block .pannel-item .pannel-item-left.icon-feedback {
+    background: url('./imgs/icon-feedback.png') no-repeat;
     background-size: 100%;
 }
