@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0,width=device-width">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>搜狐汽车-资讯-个人</title>
+    <link rel="stylesheet" href="./lib/css/idangerous.swiper.css">
+    <!-- <link rel="stylesheet" href="./lib/css/idangerous.swiper.3dflow.css"> -->
+    <link rel="stylesheet" href="./lib/css/idangerous.swiper.scrollbar.css">
+    <link rel="stylesheet" href="./lib/global.css">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./person.css">
+</head>
+<body>
+    <script>
+    (function () {
+        var createStyle = function (cssText) {
+            var document = window.document;
+            var styleTag = document.createElement("style");
+            styleTag.setAttribute("type", "text/css");
+            styleTag.innerHTML = cssText;
+            document.getElementsByTagName("head").item(0).appendChild(styleTag);
+        };
+
+        var ua = window.navigator.userAgent;
+        var isMobile = ua.match(/(Android|iPhone|iPad)/);
+        var width = 320;
+        if (isMobile) {
+            width = document.body.clientWidth;
+            createStyle('html { font-size: ' + width * 12 / 320 + 'px; font-family: "Helvetica"; }');
+        } else {
+            createStyle('html { font-size: ' + width * 12 / 320 + 'px; font-family: "黑体-简", "Helvetica"; } ');
+        }
+    }());
+    </script>
+    <div class="person-header">
+        <div class="header-top-bar">
+            <span class="header-top-bar-title">我</span>
+            <span class="header-top-bar-setting"></span>
+        </div>
+        <div class="header-middle-button">登录</div>
+    </div>
+    <div class="pannel-block">
+        <div class="pannel-item clearfix">
+            <span class="pannel-item-left icon-location"></span>
+            <div class="pannel-content clearfix">
+                <span class="pannel-item-text">所在城市</span>
+                <span class="pannel-item-right"></span>
+            </div>
+        </div>
+        <div class="pannel-item clearfix">
+            <span class="pannel-item-left icon-star"></span>
+            <div class="pannel-content clearfix">
+                <span class="pannel-item-text">收藏夹</span>
+                <span class="pannel-item-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="pannel-block">
+        <div class="pannel-item clearfix">
+            <span class="pannel-item-left icon-rules"></span>
+            <div class="pannel-content clearfix">
+                <span class="pannel-item-text">违章查询</span>
+                <span class="pannel-item-right"></span>
+            </div>
+        </div>
+        <div class="pannel-item clearfix">
+            <span class="pannel-item-left icon-calculator"></span>
+            <div class="pannel-content clearfix">
+                <span class="pannel-item-text">购车计算</span>
+                <span class="pannel-item-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="pannel-block">
+        <div class="pannel-item clearfix">
+            <span class="pannel-item-left icon-feedback"></span>
+            <div class="pannel-content clearfix">
+                <span class="pannel-item-text">意见反馈</span>
+                <span class="pannel-item-right"></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="flex footer-tabs">
+            <li class="cell active">
+                <div class="footer-icon footer-icon-info"></div>
+                <p class="footer-text">资讯</p>
+            </li>
+            <li class="cell">
+                <div class="footer-icon footer-icon-car"></div>
+                <p class="footer-text">找车</p>
+            </li>
+            <li class="cell">
+                <div class="footer-icon footer-icon-money"></div>
+                <p class="footer-text">特惠</p>
+            </li>
+            <li class="cell">
+                <div class="footer-icon footer-icon-msg"></div>
+                <p class="footer-text">论坛</p>
+            </li>
+            <li class="cell">
+                <div class="footer-icon footer-icon-person"></div>
+                <p class="footer-text">我的</p>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./lib/js/jquery.min.js"></script>
+    <script src="./lib/js/jquery-tap.js"></script>
+    <script src="./lib/js/idangerous.swiper-2.0.min.js"></script>
+    <script src="./lib/js/idangerous.swiper.scrollbar-2.0.js"></script>
+    <script src="./common.js"></script>
+    <script src="./person.js"></script>
+    <!-- <script src="./lib/js/idangerous.swiper.3dflow-2.0.js"></script> -->
+    <!-- <script src="http://10.2.58.184:8080/target/target-script-min.js#anonymous"></script> -->
+</body>
+</html>

@@ -1,0 +1,80 @@
+.find-header {
+    padding: 2.333333333rem 0 0.750000000rem;
+    background: #529ff2;
+    text-align: center;
+    position: relative;
+}
+
+.find-header .find-header-tabs {
+    padding: 0.333333333rem 0;
+    display: inline-block;
+    border: 0.083333333rem solid #fff;
+    border-radius: 1.416666667rem;
+}
+
+.find-header .find-header-tabs span{
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.find-header .find-header-tabs.two-pannel span{
+    padding: 0.250000000rem 0.916666667rem;
+    border-radius: 1.416666667rem;
+}
+
+.find-header .find-header-tabs.two-pannel .active {
+    background: #fff;
+    color: #529ff2;
+    border: 0.083333333rem solid #fff;
+}
+
+.find-header .icon-search {
+    display: inline-block;
+    width: 1.458333333rem;
+    height: 1.458333333rem;
+    background: url('./imgs/icon-search.png') no-repeat;
+    background-size: 100%;
+    margin: 0.312500000rem 0.416666667rem 0.312500000rem 0;
+    vertical-align: middle;
+    position: absolute;
+    right: 0.833333333rem;
+}
+.em 
+.find-header .icon-search  {
+    background: url('./img_v2s/icon-search.png') no-repeat;
+}
+
+.find-content {
+    max-height: 33.916666667rem;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+}
+.find-banner {
+    width: 26.666666667rem;
+    border-bottom: 0.083333333rem solid #ededed;
+}
+
+.find-pannel {
+    margin-top: 0;
+}
+
+.find-footer {
+    position: absolute;
+    bottom: 4.166666667rem;
+    padding: 1.333333333rem 0 1.333333333rem 1.500000000rem;
+    border-top: 0.083333333rem solid #ebebeb;
+    background: #fff;
+}
+
+.find-footer .find-footer-left {
+    font-size: 1.3333333333333333rem;
+    color: #353535;
+}
+
+.find-footer .find-footer-right {
+    color: #fff;
+    font-size: 1.25rem;
+    background: #529ff2;
+    margin-left: 2.333333333rem;
+    padding: 0.416666667rem 3.750000000rem;
+}

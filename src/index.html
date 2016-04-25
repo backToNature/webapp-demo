@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./lib/global.css">
     <link rel="stylesheet" href="./common.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./find.css">
+    <link rel="stylesheet" href="./person.css">
 </head>
 <body>
     <script>
@@ -35,113 +37,264 @@
         }
     }());
     </script>
-    <div class="header">
-        <div class="header-title">
-            <div class="title-logo"></div>
-            <h1>汽车</h1>
-        </div>
-        <div class="header-tabs">
-            <div class="header-tabs-ul-w scroll">
-                <ul class="header-tabs-ul clearfix">
-                    <li class="active">推荐</li>
-                    <li class="">新车</li>
-                    <li class="">图解</li>
-                    <li class="">导购</li>
-                    <li class="">视频</li>
-                    <li class="">用车</li>
-                    <li class="">试驾</li>
-                </ul>
+    <div class="page" id="page-index" style="display: block;">
+        <div class="header">
+            <div class="header-title">
+                <div class="title-logo"></div>
+                <h1>汽车</h1>
             </div>
-            <div class="bottom-select"></div>
+            <div class="header-tabs">
+                <div class="header-tabs-ul-w scroll">
+                    <ul class="header-tabs-ul clearfix">
+                        <li class="active">推荐</li>
+                        <li class="">新车</li>
+                        <li class="">图解</li>
+                        <li class="">导购</li>
+                        <li class="">视频</li>
+                        <li class="">用车</li>
+                        <li class="">试驾</li>
+                    </ul>
+                </div>
+                <div class="bottom-select"></div>
+            </div>
+        </div>
+        <div class="content scroll">
+            <div class="panel-index">
+                <div class="select-tab">
+                    <ul class="flex">
+                        <li class="cell">
+                            <img src="./imgs/1.png" alt="">
+                            <p>热门车</p>
+                        </li>
+                        <li class="cell">
+                            <img src="./imgs/2.png" alt="">
+                            <p>看新车</p>
+                        </li>
+                        <li class="cell">
+                            <img src="./imgs/3.png" alt="">
+                            <p>二手车</p>
+                        </li>
+                        <li class="cell">
+                            <img src="./imgs/4.png" alt="">
+                            <p>查违章</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-index-list">
+                    <div class="list-item clearfix">
+                        <img src="http://i3.itc.cn/20160406/3477_06d81f7d_efce_e121_9002_10b970bb6086_1.jpg" alt="">
+                        <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                        <div class="list-item-bottom">
+                            <span class="red-tag">车展</span>
+                            <span class="icon-person"></span>
+                            <span class="item-bottom-text">搜狐汽车</span>
+                        </div>
+                    </div>
+                    <div class="list-item clearfix">
+                        <img src="http://images.sohu.com/saf/a2016/0406/wKiDRFcEvtWAJKCMAADDgwQ_BTM734640x320.jpg" alt="">
+                        <span class="list-item-title">399元智驾盒子免费拿</span>
+                        <div class="list-item-bottom">
+                            <span class="red-tag">车展</span>
+                            <span class="icon-person"></span>
+                            <span class="item-bottom-text">搜狐汽车</span>
+                        </div>
+                    </div>
+                    <div class="list-item clearfix">
+                        <img src="http://i2.itc.cn/20160406/3261_b60709ad_d8d3_ca19_4e66_015eb56feab8_1.JPG" alt="">
+                        <span class="list-item-title">大众推出捷达加长版，长5米轴距近3米，仅售18万！</span>
+                        <div class="list-item-bottom">
+                            <span class="icon-person"></span>
+                            <span class="item-bottom-text">谈车工坊</span>
+                        </div>
+                        <span class="right-comment">
+                            <span class="icon-msg"></span>
+                            <span class="item-bottom-text">0</span>
+                        </span>
+                    </div>
+                    <div class="list-item clearfix">
+                        <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                        <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                        <div class="list-item-bottom">
+                            <span class="icon-person"></span>
+                            <span class="item-bottom-text">搜狐汽车</span>
+                        </div>
+                    </div>
+                    <div class="list-item clearfix">
+                        <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                        <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                        <div class="list-item-bottom">
+                            <span class="icon-person"></span>
+                            <span class="item-bottom-text">搜狐汽车</span>
+                        </div>
+                    </div>
+                    <div class="list-item clearfix">
+                        <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                        <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                        <div class="list-item-bottom">
+                            <span class="icon-person"></span>
+                            <span class="item-bottom-text">搜狐汽车</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="content scroll">
-        <div class="panel-index">
-            <div class="select-tab">
-                <ul class="flex">
-                    <li class="cell">
-                        <img src="./imgs/1.png" alt="">
-                        <p>热门车</p>
-                    </li>
-                    <li class="cell">
-                        <img src="./imgs/2.png" alt="">
-                        <p>看新车</p>
-                    </li>
-                    <li class="cell">
-                        <img src="./imgs/3.png" alt="">
-                        <p>二手车</p>
-                    </li>
-                    <li class="cell">
-                        <img src="./imgs/4.png" alt="">
-                        <p>查违章</p>
-                    </li>
-                </ul>
+    <div class="page" id="page-find" style="display: none;">
+        <div class="find-header">
+            <div class="find-header-tabs two-pannel">
+                <span>品牌选车</span>
+                <span class="active">条件选车</span>
             </div>
-            <div class="panel-index-list">
-                <div class="list-item clearfix">
-                    <img src="http://i3.itc.cn/20160406/3477_06d81f7d_efce_e121_9002_10b970bb6086_1.jpg" alt="">
-                    <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
-                    <div class="list-item-bottom">
-                        <span class="red-tag">车展</span>
-                        <span class="icon-person"></span>
-                        <span class="item-bottom-text">搜狐汽车</span>
+            <span class="icon-search"></span>
+        </div>
+        <div class="find-content scroll">
+            <img class="find-banner" src="./imgs/find-banner.jpg">
+            <div class="pannel-block find-pannel">
+                <div class="pannel-item clearfix">
+                    <div class="pannel-content clearfix">
+                        <span class="pannel-item-text">级别</span>
+                        <span class="pannel-item-choose active">微型车</span>
+                        <span class="pannel-item-right"></span>
                     </div>
                 </div>
-                <div class="list-item clearfix">
-                    <img src="http://images.sohu.com/saf/a2016/0406/wKiDRFcEvtWAJKCMAADDgwQ_BTM734640x320.jpg" alt="">
-                    <span class="list-item-title">399元智驾盒子免费拿</span>
-                    <div class="list-item-bottom">
-                        <span class="red-tag">车展</span>
-                        <span class="icon-person"></span>
-                        <span class="item-bottom-text">搜狐汽车</span>
+                <div class="pannel-item clearfix">
+                    <div class="pannel-content clearfix">
+                        <span class="pannel-item-text">结构</span>
+                        <span class="pannel-item-choose active">MPV</span>
+                        <span class="pannel-item-right"></span>
                     </div>
                 </div>
-                <div class="list-item clearfix">
-                    <img src="http://i2.itc.cn/20160406/3261_b60709ad_d8d3_ca19_4e66_015eb56feab8_1.JPG" alt="">
-                    <span class="list-item-title">大众推出捷达加长版，长5米轴距近3米，仅售18万！</span>
-                    <div class="list-item-bottom">
-                        <span class="icon-person"></span>
-                        <span class="item-bottom-text">谈车工坊</span>
-                    </div>
-                    <span class="right-comment">
-                        <span class="icon-msg"></span>
-                        <span class="item-bottom-text">0</span>
-                    </span>
-                </div>
-                <div class="list-item clearfix">
-                    <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
-                    <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
-                    <div class="list-item-bottom">
-                        <span class="icon-person"></span>
-                        <span class="item-bottom-text">搜狐汽车</span>
+                <div class="pannel-item clearfix">
+                    <div class="pannel-content clearfix">
+                        <span class="pannel-item-text">排量</span>
+                        <span class="pannel-item-choose">不限</span>
+                        <span class="pannel-item-right"></span>
                     </div>
                 </div>
-                <div class="list-item clearfix">
-                    <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
-                    <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
-                    <div class="list-item-bottom">
-                        <span class="icon-person"></span>
-                        <span class="item-bottom-text">搜狐汽车</span>
+                <div class="pannel-item clearfix">
+                    <div class="pannel-content clearfix">
+                        <span class="pannel-item-text">配置</span>
+                        <span class="pannel-item-choose">不限</span>
+                        <span class="pannel-item-right"></span>
                     </div>
                 </div>
-                <div class="list-item clearfix">
-                    <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
-                    <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
-                    <div class="list-item-bottom">
-                        <span class="icon-person"></span>
-                        <span class="item-bottom-text">搜狐汽车</span>
+                <div class="pannel-item clearfix">
+                    <div class="pannel-content clearfix">
+                        <span class="pannel-item-text">驱动</span>
+                        <span class="pannel-item-choose">不限</span>
+                        <span class="pannel-item-right"></span>
                     </div>
+                </div>
+                <div class="pannel-item clearfix">
+                    <div class="pannel-content clearfix">
+                        <span class="pannel-item-text">国别</span>
+                        <span class="pannel-item-choose">不限</span>
+                        <span class="pannel-item-right"></span>
+                    </div>
+                </div>
+                <div class="pannel-item clearfix">
+                    <div class="pannel-content clearfix">
+                        <span class="pannel-item-text">配件</span>
+                        <span class="pannel-item-choose">不限</span>
+                        <span class="pannel-item-right"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="find-footer">
+            <span class="find-footer-left">重置</span>
+            <span class="find-footer-right">有15个车型符合条件</span>
+        </div>
+        <div class="sidebar ease-in-out">
+            <div class="sidebar-header">
+                <span class="sidebar-header-title">选择结构</span>
+                <span class="sidebar-header-sure">确定</span>
+            </div>
+            <div class="sidebar-content scroll">
+                <div class="sidebar-content-list">
+                    <div class="sidebar-content-list-item">
+                        <span class="sidebar-content-list-item-title">不限</span>
+                        <span class="sidebar-content-list-item-check"></span>
+                    </div>
+                    <div class="sidebar-content-list-item checked">
+                        <span class="sidebar-content-list-item-title">两厢轿车</span>
+                        <span class="sidebar-content-list-item-check"></span>
+                    </div>
+                    <div class="sidebar-content-list-item">
+                        <span class="sidebar-content-list-item-title">三厢轿车</span>
+                        <span class="sidebar-content-list-item-check"></span>
+                    </div>
+                    <div class="sidebar-content-list-item">
+                        <span class="sidebar-content-list-item-title">MPV</span>
+                        <span class="sidebar-content-list-item-check"></span>
+                    </div>
+                    <div class="sidebar-content-list-item">
+                        <span class="sidebar-content-list-item-title">SUV</span>
+                        <span class="sidebar-content-list-item-check"></span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="press ease-in-out-opacity"></div>
+    </div>
+    <div class="page" id="page-person" style="display: none;">
+        <div class="person-header">
+            <div class="header-top-bar">
+                <span class="header-top-bar-title">我</span>
+                <span class="header-top-bar-setting"></span>
+            </div>
+            <div class="header-middle-button">登录</div>
+        </div>
+        <div class="pannel-block">
+            <div class="pannel-item clearfix">
+                <span class="pannel-item-left icon-location"></span>
+                <div class="pannel-content clearfix">
+                    <span class="pannel-item-text">所在城市</span>
+                    <span class="pannel-item-right"></span>
+                </div>
+            </div>
+            <div class="pannel-item clearfix">
+                <span class="pannel-item-left icon-star"></span>
+                <div class="pannel-content clearfix">
+                    <span class="pannel-item-text">收藏夹</span>
+                    <span class="pannel-item-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="pannel-block">
+            <div class="pannel-item clearfix">
+                <span class="pannel-item-left icon-rules"></span>
+                <div class="pannel-content clearfix">
+                    <span class="pannel-item-text">违章查询</span>
+                    <span class="pannel-item-right"></span>
+                </div>
+            </div>
+            <div class="pannel-item clearfix">
+                <span class="pannel-item-left icon-calculator"></span>
+                <div class="pannel-content clearfix">
+                    <span class="pannel-item-text">购车计算</span>
+                    <span class="pannel-item-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="pannel-block">
+            <div class="pannel-item clearfix">
+                <span class="pannel-item-left icon-feedback"></span>
+                <div class="pannel-content clearfix">
+                    <span class="pannel-item-text">意见反馈</span>
+                    <span class="pannel-item-right"></span>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer">
         <ul class="flex footer-tabs">
-            <li class="cell active">
+            <li class="cell active" data-page="index">
                 <div class="footer-icon footer-icon-info"></div>
                 <p class="footer-text">资讯</p>
             </li>
-            <li class="cell">
+            <li class="cell" data-page="find">
                 <div class="footer-icon footer-icon-car"></div>
                 <p class="footer-text">找车</p>
             </li>
@@ -153,7 +306,7 @@
                 <div class="footer-icon footer-icon-msg"></div>
                 <p class="footer-text">论坛</p>
             </li>
-            <li class="cell">
+            <li class="cell" data-page="person">
                 <div class="footer-icon footer-icon-person"></div>
                 <p class="footer-text">我的</p>
             </li>
@@ -165,6 +318,8 @@
     <script src="./lib/js/idangerous.swiper.scrollbar-2.0.js"></script>
     <script src="./common.js"></script>
     <script src="./index.js"></script>
+    <script src="./find.js"></script>
+    <script src="./person.js"></script>
     <!-- <script src="./lib/js/idangerous.swiper.3dflow-2.0.js"></script> -->
     <!-- <script src="http://10.2.58.184:8080/target/target-script-min.js#anonymous"></script> -->
 </body>
