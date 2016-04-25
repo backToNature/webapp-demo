@@ -1,5 +1,7 @@
-body {
+body, html {
     background: #f7f7f7;
+    height: 100%;
+    overflow: hidden;
 }
 .person-header {
     height: 155px;
