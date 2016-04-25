@@ -126,6 +126,18 @@ body {
     color: #353535;
 }
 
+.pannel-block .pannel-item .pannel-content .pannel-item-choose {
+    font-size: 14px;
+    float: left;
+    padding: 1px 0;
+    margin-left: 34px;
+    color: #adadad;
+}
+
+.pannel-block .pannel-item .pannel-content .pannel-item-choose.active {
+    color: #529ff2;
+}
+
 .pannel-block .pannel-item .pannel-content .pannel-item-right {
     display: inline-block;
     width: 6.5px;
@@ -159,4 +171,85 @@ body {
 .pannel-block .pannel-item .pannel-item-left.icon-feedback {
     background: url('./imgs/icon-feedback.png') no-repeat;
     background-size: 100%;
+}
+
+/*蒙层样式*/
+.press {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    opacity: .2;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+}
+
+/*sidebar 样式*/
+.sidebar {
+    height: 100vh;
+    width: 228px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.sidebar .sidebar-header {
+    padding: 23px 0;
+    background: #ebebeb;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sidebar .sidebar-header .sidebar-header-title {
+    color: #333;
+    font-size: 16px;
+}
+
+.sidebar .sidebar-header .sidebar-header-sure {
+    color: #529ff2;
+    position: absolute;
+    font-size: 12px;
+    right: 16px;
+    margin: 3.5px 0;
+}
+
+.sidebar .sidebar-content {
+    height: 506px;
+    overflow-y: scroll;
+    overflow-x: hidden; 
+}
+
+.sidebar .sidebar-content .sidebar-content-list {
+
+}
+
+.sidebar .sidebar-content .sidebar-content-list .sidebar-content-list-item {
+    border-bottom: 1px solid #ededed;
+    padding: 17px 15px 16px;
+}
+
+.sidebar .sidebar-content .sidebar-content-list .sidebar-content-list-item .sidebar-content-list-item-title {
+    font-size: 16px;
+    color: #6d6d6d;
+}
+
+.sidebar .sidebar-content .sidebar-content-list .sidebar-content-list-item .sidebar-content-list-item-check {
+    width: 16px;
+    height: 16px;
+    background: url('./imgs/icon-checked.png') no-repeat;
+    background-size: 100%;
+    float: right;
+    display: none;
+}
+
+.sidebar .sidebar-content .sidebar-content-list .sidebar-content-list-item.checked .sidebar-content-list-item-title {
+    color: #529ff2;
+}
+
+.sidebar .sidebar-content .sidebar-content-list .sidebar-content-list-item.checked .sidebar-content-list-item-check {
+    display: inline-block;
 }
