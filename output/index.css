@@ -8,6 +8,8 @@ img {
 
 .header {
     background: #fff;
+    position: relative;
+    z-index: 100;
 }
 
 .header .header-title {
@@ -69,12 +71,12 @@ img {
 }
 
 .header .header-tabs .header-tabs-ul li.active {
-    color: #529ff2;
     border-bottom: 0.166666667rem solid #529ff2;
 }
 
 .header .header-tabs .bottom-select {
-    display: none;
+    /*display: none;*/
+    opacity: 0;
     position: absolute;
     height: 0.166666667rem;
     background: #529ff2;
@@ -84,10 +86,12 @@ img {
 }
 
 .content {
-    max-height: 38.333333333rem;
+    max-height: 43.500000000rem;
     overflow-x: hidden;
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; 
+    position: relative;
+    z-index: 100;
+    -webkit-overflow-scrolling: touch;
 }
 
 .content .panel-index {

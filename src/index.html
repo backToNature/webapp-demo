@@ -38,6 +38,7 @@
     }());
     </script>
     <div class="page" id="page-index" style="display: block;">
+        
         <div class="header">
             <div class="header-title">
                 <div class="title-logo"></div>
@@ -46,7 +47,7 @@
             <div class="header-tabs">
                 <div class="header-tabs-ul-w scroll">
                     <ul class="header-tabs-ul clearfix">
-                        <li class="active">推荐</li>
+                        <li class="active theme-blue">推荐</li>
                         <li class="">新车</li>
                         <li class="">图解</li>
                         <li class="">导购</li>
@@ -55,84 +56,439 @@
                         <li class="">试驾</li>
                     </ul>
                 </div>
-                <div class="bottom-select"></div>
+                <div class="bottom-select ease-in-out"></div>
             </div>
         </div>
-        <div class="content scroll">
-            <div class="panel-index">
-                <div class="select-tab">
-                    <ul class="flex">
-                        <li class="cell">
-                            <img src="./imgs/1.png" alt="">
-                            <p>热门车</p>
-                        </li>
-                        <li class="cell">
-                            <img src="./imgs/2.png" alt="">
-                            <p>看新车</p>
-                        </li>
-                        <li class="cell">
-                            <img src="./imgs/3.png" alt="">
-                            <p>二手车</p>
-                        </li>
-                        <li class="cell">
-                            <img src="./imgs/4.png" alt="">
-                            <p>查违章</p>
-                        </li>
-                    </ul>
+        <div class="swiper-container" style="margin-top: -72px;">
+            
+            <div class="content swiper-wrapper scroll">
+                <div class="content-loading">
+                    <img class="icon-loading" src="./imgs/icon-loading.png" alt="">
+                    <span class="content-loading-text">上次更新时间：16:59</span>
                 </div>
-                <div class="panel-index-list">
-                    <div class="list-item clearfix">
-                        <img src="http://i3.itc.cn/20160406/3477_06d81f7d_efce_e121_9002_10b970bb6086_1.jpg" alt="">
-                        <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
-                        <div class="list-item-bottom">
-                            <span class="red-tag">车展</span>
-                            <span class="icon-person"></span>
-                            <span class="item-bottom-text">搜狐汽车</span>
+                <div class="panel-index swiper-slide panel">
+                    <div class="select-tab">
+                        <ul class="flex">
+                            <li class="cell">
+                                <img src="./imgs/1.png" alt="">
+                                <p>热门车</p>
+                            </li>
+                            <li class="cell">
+                                <img src="./imgs/2.png" alt="">
+                                <p>看新车</p>
+                            </li>
+                            <li class="cell">
+                                <img src="./imgs/3.png" alt="">
+                                <p>二手车</p>
+                            </li>
+                            <li class="cell">
+                                <img src="./imgs/4.png" alt="">
+                                <p>查违章</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-index-list">
+                        <div class="list-item clearfix">
+                            <img src="http://i3.itc.cn/20160406/3477_06d81f7d_efce_e121_9002_10b970bb6086_1.jpg" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://images.sohu.com/saf/a2016/0406/wKiDRFcEvtWAJKCMAADDgwQ_BTM734640x320.jpg" alt="">
+                            <span class="list-item-title">399元智驾盒子免费拿</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i2.itc.cn/20160406/3261_b60709ad_d8d3_ca19_4e66_015eb56feab8_1.JPG" alt="">
+                            <span class="list-item-title">大众推出捷达加长版，长5米轴距近3米，仅售18万！</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">谈车工坊</span>
+                            </div>
+                            <span class="right-comment">
+                                <span class="icon-msg"></span>
+                                <span class="item-bottom-text">0</span>
+                            </span>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="list-item clearfix">
-                        <img src="http://images.sohu.com/saf/a2016/0406/wKiDRFcEvtWAJKCMAADDgwQ_BTM734640x320.jpg" alt="">
-                        <span class="list-item-title">399元智驾盒子免费拿</span>
-                        <div class="list-item-bottom">
-                            <span class="red-tag">车展</span>
-                            <span class="icon-person"></span>
-                            <span class="item-bottom-text">搜狐汽车</span>
+                </div>
+                <div class="panel-index swiper-slide">
+                    <div class="panel-index-list">
+                        <div class="list-item clearfix">
+                            <img src="http://i3.itc.cn/20160406/3477_06d81f7d_efce_e121_9002_10b970bb6086_1.jpg" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://images.sohu.com/saf/a2016/0406/wKiDRFcEvtWAJKCMAADDgwQ_BTM734640x320.jpg" alt="">
+                            <span class="list-item-title">399元智驾盒子免费拿</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i2.itc.cn/20160406/3261_b60709ad_d8d3_ca19_4e66_015eb56feab8_1.JPG" alt="">
+                            <span class="list-item-title">大众推出捷达加长版，长5米轴距近3米，仅售18万！</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">谈车工坊</span>
+                            </div>
+                            <span class="right-comment">
+                                <span class="icon-msg"></span>
+                                <span class="item-bottom-text">0</span>
+                            </span>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="list-item clearfix">
-                        <img src="http://i2.itc.cn/20160406/3261_b60709ad_d8d3_ca19_4e66_015eb56feab8_1.JPG" alt="">
-                        <span class="list-item-title">大众推出捷达加长版，长5米轴距近3米，仅售18万！</span>
-                        <div class="list-item-bottom">
-                            <span class="icon-person"></span>
-                            <span class="item-bottom-text">谈车工坊</span>
+                </div>
+                <div class="panel-index swiper-slide">
+                    <div class="panel-index-list">
+                        <div class="list-item clearfix">
+                            <img src="http://i3.itc.cn/20160406/3477_06d81f7d_efce_e121_9002_10b970bb6086_1.jpg" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
                         </div>
-                        <span class="right-comment">
-                            <span class="icon-msg"></span>
-                            <span class="item-bottom-text">0</span>
-                        </span>
-                    </div>
-                    <div class="list-item clearfix">
-                        <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
-                        <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
-                        <div class="list-item-bottom">
-                            <span class="icon-person"></span>
-                            <span class="item-bottom-text">搜狐汽车</span>
+                        <div class="list-item clearfix">
+                            <img src="http://images.sohu.com/saf/a2016/0406/wKiDRFcEvtWAJKCMAADDgwQ_BTM734640x320.jpg" alt="">
+                            <span class="list-item-title">399元智驾盒子免费拿</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i2.itc.cn/20160406/3261_b60709ad_d8d3_ca19_4e66_015eb56feab8_1.JPG" alt="">
+                            <span class="list-item-title">大众推出捷达加长版，长5米轴距近3米，仅售18万！</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">谈车工坊</span>
+                            </div>
+                            <span class="right-comment">
+                                <span class="icon-msg"></span>
+                                <span class="item-bottom-text">0</span>
+                            </span>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="list-item clearfix">
-                        <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
-                        <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
-                        <div class="list-item-bottom">
-                            <span class="icon-person"></span>
-                            <span class="item-bottom-text">搜狐汽车</span>
+                </div>
+                <div class="panel-index swiper-slide">
+                    <div class="panel-index-list">
+                        <div class="list-item clearfix">
+                            <img src="http://i3.itc.cn/20160406/3477_06d81f7d_efce_e121_9002_10b970bb6086_1.jpg" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://images.sohu.com/saf/a2016/0406/wKiDRFcEvtWAJKCMAADDgwQ_BTM734640x320.jpg" alt="">
+                            <span class="list-item-title">399元智驾盒子免费拿</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i2.itc.cn/20160406/3261_b60709ad_d8d3_ca19_4e66_015eb56feab8_1.JPG" alt="">
+                            <span class="list-item-title">大众推出捷达加长版，长5米轴距近3米，仅售18万！</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">谈车工坊</span>
+                            </div>
+                            <span class="right-comment">
+                                <span class="icon-msg"></span>
+                                <span class="item-bottom-text">0</span>
+                            </span>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="list-item clearfix">
-                        <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
-                        <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
-                        <div class="list-item-bottom">
-                            <span class="icon-person"></span>
-                            <span class="item-bottom-text">搜狐汽车</span>
+                </div>
+                <div class="panel-index swiper-slide">
+                    <div class="panel-index-list">
+                        <div class="list-item clearfix">
+                            <img src="http://i3.itc.cn/20160406/3477_06d81f7d_efce_e121_9002_10b970bb6086_1.jpg" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://images.sohu.com/saf/a2016/0406/wKiDRFcEvtWAJKCMAADDgwQ_BTM734640x320.jpg" alt="">
+                            <span class="list-item-title">399元智驾盒子免费拿</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i2.itc.cn/20160406/3261_b60709ad_d8d3_ca19_4e66_015eb56feab8_1.JPG" alt="">
+                            <span class="list-item-title">大众推出捷达加长版，长5米轴距近3米，仅售18万！</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">谈车工坊</span>
+                            </div>
+                            <span class="right-comment">
+                                <span class="icon-msg"></span>
+                                <span class="item-bottom-text">0</span>
+                            </span>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-index swiper-slide">
+                    <div class="panel-index-list">
+                        <div class="list-item clearfix">
+                            <img src="http://i3.itc.cn/20160406/3477_06d81f7d_efce_e121_9002_10b970bb6086_1.jpg" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://images.sohu.com/saf/a2016/0406/wKiDRFcEvtWAJKCMAADDgwQ_BTM734640x320.jpg" alt="">
+                            <span class="list-item-title">399元智驾盒子免费拿</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i2.itc.cn/20160406/3261_b60709ad_d8d3_ca19_4e66_015eb56feab8_1.JPG" alt="">
+                            <span class="list-item-title">大众推出捷达加长版，长5米轴距近3米，仅售18万！</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">谈车工坊</span>
+                            </div>
+                            <span class="right-comment">
+                                <span class="icon-msg"></span>
+                                <span class="item-bottom-text">0</span>
+                            </span>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-index swiper-slide">
+                    <div class="panel-index-list">
+                        <div class="list-item clearfix">
+                            <img src="http://i3.itc.cn/20160406/3477_06d81f7d_efce_e121_9002_10b970bb6086_1.jpg" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://images.sohu.com/saf/a2016/0406/wKiDRFcEvtWAJKCMAADDgwQ_BTM734640x320.jpg" alt="">
+                            <span class="list-item-title">399元智驾盒子免费拿</span>
+                            <div class="list-item-bottom">
+                                <span class="red-tag">车展</span>
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i2.itc.cn/20160406/3261_b60709ad_d8d3_ca19_4e66_015eb56feab8_1.JPG" alt="">
+                            <span class="list-item-title">大众推出捷达加长版，长5米轴距近3米，仅售18万！</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">谈车工坊</span>
+                            </div>
+                            <span class="right-comment">
+                                <span class="icon-msg"></span>
+                                <span class="item-bottom-text">0</span>
+                            </span>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
+                        </div>
+                        <div class="list-item clearfix">
+                            <img src="http://i1.itc.cn/20160406/3261_f5980683_d287_808c_67a1_671a70ba6392_1.JPG" alt="">
+                            <span class="list-item-title">车展前传06期:是惊还是雷？看历届北京车展概念车</span>
+                            <div class="list-item-bottom">
+                                <span class="icon-person"></span>
+                                <span class="item-bottom-text">搜狐汽车</span>
+                            </div>
                         </div>
                     </div>
                 </div>

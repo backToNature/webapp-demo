@@ -19,6 +19,7 @@ body{
     width: 100%;
     bottom: 0;
     border-top: 0.083333333rem solid #f6f6f6;
+    z-index: 100;
 }
 
 .footer .footer-tabs {
@@ -291,7 +292,6 @@ body{
     top: 0;
     right: -19.000000000rem;
     z-index: 1000;
-   
 }
 
 .sidebar.active {
@@ -367,8 +367,29 @@ body{
     display: inline-block;
 }
 
-/*动画样式*/
+/*loading动画*/
+.content-loading {
+    width: 26.666666667rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
 
+.content-loading .icon-loading {
+    width: 2.000000000rem;
+    margin: 0.833333333rem 0;
+}
+
+.content-loading  .content-loading-text {
+    display: block;
+    margin: 0.833333333rem 0;
+}
+
+.panel {
+    background: #fafafa;
+}
+
+/*动画样式*/
 .ease-in-out {
     -webkit-transition: -webkit-transform .3s cubic-bezier(0.42, 0, 0.58, 1.0);
     -moz-transition: -webkit-transform .3s cubic-bezier(0.42, 0, 0.58, 1.0);
@@ -383,4 +404,9 @@ body{
     -ms-transition: opacity .3s cubic-bezier(0.42, 0, 0.58, 1.0);
     -o-transition: opacity .3s cubic-bezier(0.42, 0, 0.58, 1.0);
     transition: opacity .3s cubic-bezier(0.42, 0, 0.58, 1.0);
+}
+
+/*主题颜色*/
+.theme-blue {
+    color: #529ff2;
 }
