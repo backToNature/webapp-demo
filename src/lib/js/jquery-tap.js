@@ -18,6 +18,12 @@
         setup: function(data, namespaces, eventHandle) {
             var $element = $(this);
             var eventData = {};
+            var forbiddenNativeTap = false;
+            // 提供不触发横向原生点击的可能
+            if ($element.hasClass('forbiddenNativeTap')) {
+                forbiddenNativeTap = true;
+            }
+
             $element
             // 收集事件对象
             .on(nativeEvent.start + ' ' + nativeEvent.ing + ' ' + nativeEvent.end, function(event) {
@@ -42,11 +48,17 @@
             .on(nativeEvent.end, function(event) {
                 // 对比touchstart和touchend的位置和target
                 // 横向移动依然触发
-                if (eventData.target === event.target && (eventData.startY === eventData.event.pageY)) {
-                    event.type = specialEventName;
-                    event.pageX = eventData.event.pageX;
-                    event.pageY  = eventData.event.pageY;
-                    eventHandle.call(this, event);
+                event.type = specialEventName;
+                event.pageX = eventData.event.pageX;
+                event.pageY  = eventData.event.pageY;
+                if (forbiddenNativeTap) {
+                    if (eventData.target === event.target && eventData.startY === eventData.event.pageY && eventData.startX === eventData.event.pageX) {
+                        eventHandle.call(this, event);
+                    }
+                } else {
+                    if (eventData.target === event.target && eventData.startY === eventData.event.pageY) {
+                        eventHandle.call(this, event);
+                    }
                 }
                 $(this).removeClass('touchHighLight');
             });

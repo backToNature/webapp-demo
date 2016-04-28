@@ -196,10 +196,14 @@ body{
     opacity: 0;
     top: 0;
     right: 100%;
-    z-index: 100;
+    z-index: 1000;
 }
-.press.active {
+
+.press.show {
     opacity: .2;
+}
+
+.press.active {
     right: 0;
 }
 
@@ -211,7 +215,7 @@ body{
     position: absolute;
     top: 0;
     right: -228px;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .sidebar.active {
