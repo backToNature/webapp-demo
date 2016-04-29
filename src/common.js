@@ -1,10 +1,10 @@
 $(function () {
-    $('body').on('touchmove', function(e) { 
-        e.preventDefault(); 
-    });
-    $('.scroll').on('touchmove', function (e) {
-        e.stopPropagation();
-    });
+    // $('body').on('touchmove', function(e) { 
+    //     e.preventDefault(); 
+    // });
+    // $('.scroll').on('touchmove', function (e) {
+    //     e.stopPropagation();
+    // });
 
     (function () {
         $('.footer-tabs').delegate('li', 'tap', function (e) {

@@ -81,16 +81,8 @@ img {
 }
 
 .content {
-    max-height: 522px;
-    overflow-x: hidden;
-    overflow-y: scroll;
     position: relative;
     z-index: 100;
-    -webkit-overflow-scrolling: touch;
-}
-
-.content .panel-index {
-
 }
 
 .content .panel-index .select-tab {

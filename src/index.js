@@ -1,6 +1,6 @@
 $(function () {
     var adaptive = function () {
-        $('.content').css('max-height', ($(window).height() - $('.header').height() + $('.content-loading').height()) + 'px');
+        $('.panel').css('max-height', ($(window).height() - $('.header').height() + $('.content-loading').height()) + 'px');
     };
     adaptive();
     window.index_adaptive = adaptive;
@@ -11,12 +11,20 @@ $(function () {
     $('.list-item').on('tap', function (e) {
         
     });
+    var contentOffset = $('.panel-index-list').eq(0).offset().top;
     var pages = new Swiper('.swiper-container', {
+        onTouchStart: function (data) {
+            console.log(124);
+        },
+        onTouchMove: function (e) {
+            if ($('.panel-index-list').eq(0).offset().top > contentOffset) {
+                console.log(e);
+            } 
+        },
         onSlideChangeEnd: function (data) {
             $('.header-tabs-ul li').eq(data.activeIndex).trigger('tap');
         }
     });
-    // debugger;
     (function () {
         var isMoving = false;
         $('.header-tabs-ul').delegate('li', 'tap', function (e) {
@@ -24,7 +32,7 @@ $(function () {
             if (isMoving || $this.hasClass('active')) {
                 return;
             }
-            pages.swipeTo($this.index());
+            pages.slideTo($this.index());
             isMoving = true;
             $('.header-tabs-ul li').removeClass('active theme-blue');
             $bottom_select.css('opacity', 1);

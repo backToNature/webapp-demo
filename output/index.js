@@ -11,12 +11,20 @@ $(function () {
     $('.list-item').on('tap', function (e) {
         
     });
+    var contentOffset = $('.content').offset().top;
     var pages = new Swiper('.swiper-container', {
+        onTouchStart: function (data) {
+            // pages.removeSlide(); 
+            // if ($('.content').offset().top !== contentOffset) {
+            //     pages.lockSwipes();
+            // } else {
+            //     pages.unlockSwipes();
+            // }
+        },
         onSlideChangeEnd: function (data) {
             $('.header-tabs-ul li').eq(data.activeIndex).trigger('tap');
         }
     });
-    // debugger;
     (function () {
         var isMoving = false;
         $('.header-tabs-ul').delegate('li', 'tap', function (e) {
